@@ -1,0 +1,46 @@
+:root {
+  --main_color: #0e74f0;
+  --font_white: #fff;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 65%;
+  margin: 0% auto;
+  @media screen and (max-width: 950px) {
+    width: 90% !important;
+  }
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+// in Chakra ui
+body.ar {
+  .chakra-toast__inner {
+    button {
+      right: auto;
+      left: 10px;
+    }
+  }
+}
+
+// in Chakra ui

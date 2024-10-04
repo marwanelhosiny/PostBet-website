@@ -1,0 +1,73 @@
+.policy {
+  .container {
+    margin: 30px auto;
+    h1 {
+      font-size: 35px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .merge {
+      display: flex;
+      gap: 10px;
+      @media screen and (max-width: 950px) {
+        flex-direction: column;
+      }
+    }
+    .allowed {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-size: 20px;
+        text-transform: capitalize;
+        background-color: var(--main_color);
+        width: fit-content;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: 0 auto;
+        span {
+          color: var(--font_white);
+          padding: 10px;
+        }
+      }
+      .item {
+        background-color: var(--main_color);
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        flex-grow: 1;
+        .topic {
+          font-size: 22px;
+          color: var(--font_white);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @media screen and (max-width : 800px) {
+            font-size: 16px;
+          }
+          gap: 5px;
+          span {
+            &.allow {
+              color: yellowgreen;
+              font-size: 35px;
+            }
+            &.not {
+              color: red;
+              font-size: 35px;
+            }
+          }
+        }
+        .info {
+          text-transform: capitalize;
+          text-align: center;
+          @media screen and (max-width : 800px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

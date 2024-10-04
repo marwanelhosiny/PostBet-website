@@ -1,0 +1,106 @@
+.mainHeader {
+  .container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      img {
+        width: 100px;
+        height: 70px;
+      }
+    }
+    .mainNav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .items {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        a {
+          padding: 6px 10px;
+          display: block;
+          border-radius: 4px;
+          transition: 0.3s linear;
+          font-weight: 400;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+          &.active {
+            font-weight: bold;
+            letter-spacing: 1px;
+            background-color: var(--main_color);
+            color: var(--font_white);
+          }
+        }
+      }
+      .menu {
+        display: none;
+      }
+      @media screen and (max-width: 768px) {
+        .items {
+          display: none !important;
+        }
+        .menu {
+          display: block;
+          z-index: 100;
+          .chakra-menu__menu-button {
+            background-color: transparent;
+            font-size: 20px;
+          }
+          .chakra-menu__menu-list{
+            background-color: #0e74f0;
+            border: none !important;
+          }
+          .chakra-menu__menuitem {
+            background-color: #0e74f0;
+            font-size: 20px;
+            padding: 10px 15px;
+            text-align: center;
+            a{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              color: var(--font_white);
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .lang {
+        z-index: 100;
+        .chakra-popover__content{
+          width: fit-content;
+          border: none !important;
+        }
+        .chakra-popover__body{
+          background-color: var(--main_color);
+        }
+        button {
+          padding: 0%;
+          background-color: transparent;
+        }
+        .itemlang {
+          display: flex;
+          align-items: center;
+          background-color: var(--main_color);
+          padding: 2px 10px;
+          font-weight: bold;
+          cursor: pointer;
+          gap: 10px;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+          color: var(--font_white);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .chakra-popover__arrow{
+          background-color: var(--main_color) !important;
+        }
+      }
+    }
+  }
+}
