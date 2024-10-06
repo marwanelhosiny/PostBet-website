@@ -62,9 +62,7 @@ function Home() {
           </div>
           <div className="content">
             <p>
-              {t(
-                "Postbet is a powerful platform designed to help businesses streamline their social media presence. With Postbet, users can integrate multiple social media accounts and share posts simultaneously across platforms with just one click. Whether you're a startup or an established business, Postbet simplifies your social media management, allowing you to focus on what matters most growing your brand and engaging with your audience. Our mission is to make digital marketing easier, faster, and more efficient for businesses of all sizes."
-              )}
+              {t("PostBet is a cutting-edge application that aims to make it easier and faster to manage and publish content across multiple social media platforms. We provide a complete solution for content creators, businesses, marketers, and even individual users to publish photos and videos on platforms like Instagram, Facebook, X, TikTok, YouTube, etc., simultaneously and with ease.")}
             </p>
           </div>
         </div>

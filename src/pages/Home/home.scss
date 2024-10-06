@@ -126,6 +126,7 @@
     }
     .flex {
       display: flex;
+      align-items: center;
       gap: 20px;
       @media screen and (max-width: 900px) {
         flex-direction: column;

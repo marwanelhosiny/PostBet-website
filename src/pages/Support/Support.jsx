@@ -9,7 +9,6 @@ function Support() {
   const [data, setData] = useState({
     name: "",
     email: "",
-    phone: "",
     subject: "",
     message: "",
   });
@@ -88,10 +87,6 @@ function Support() {
                 <i className="fa-regular fa-envelope"></i>
                 <p>support@postbet.ae</p>
               </div>
-              <div class="information">
-                <i className="fa-solid fa-phone"></i>
-                <p>123-456-789</p>
-              </div>
             </div>
 
             <div class="social-media">
@@ -163,22 +158,6 @@ function Support() {
                 <ValidationError
                   prefix="Subject"
                   field="subject"
-                  errors={state.errors}
-                />
-              </div>
-              <div class="input-container">
-                <label for="phone">{t("Phone")}</label>
-                <input
-                  type="text"
-                  name="phone"
-                  class="input"
-                  id="phone"
-                  value={data.phone}
-                  onChange={(e) => handleChange(e)}
-                />
-                <ValidationError
-                  prefix="Phone"
-                  field="phone"
                   errors={state.errors}
                 />
               </div>

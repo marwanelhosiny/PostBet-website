@@ -19,9 +19,46 @@ function About() {
       </div>
       <div className="container">
         <div className="title">
-          <h1>{t("Welcome with Bolivard Company")}</h1>
+          <h1>{t("Welcome with Boulevard Company")}</h1>
         </div>
         <Accordion defaultIndex={[0]} allowToggle>
+          <AccordionItem>
+            <AccordionButton>
+              <Box as="span" flex="1" textAlign="left">
+                {t("Who We Are ?")}
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              {t("PostBet is an Emirati app owned by an Emirati company and based in the United Arab Emirates. It aims to facilitate the management and publication of content across various social media platforms effectively and quickly. We offer a complete solution for content creators, businesses, marketers, and even individuals to publish photos and videos simultaneously with ease.")}
+            </AccordionPanel>
+          </AccordionItem>
+          <AccordionItem>
+            <AccordionButton>
+              <Box as="span" flex="1" textAlign="left">
+                {t("What do we provide ?")}
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              {t(
+               "PostBet provides smart tools for editing content before publishing, and the ability to upload and publish multiple files at once. Additionally, we offer AI technology that helps you create unique content based on your descriptions."
+              )}
+            </AccordionPanel>
+          </AccordionItem>
+          <AccordionItem>
+            <AccordionButton>
+              <Box as="span" flex="1" textAlign="left">
+                {t("What is our goal ?")}
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              {t(
+                "We aim to empower individuals and businesses to scale their digital presence with less effort and greater results. PostBet is your ideal partner for managing digital content in a smart and fast way."
+              )}
+            </AccordionPanel>
+          </AccordionItem>
           <AccordionItem>
             <AccordionButton>
               <Box as="span" flex="1" textAlign="left">
@@ -31,7 +68,7 @@ function About() {
             </AccordionButton>
             <AccordionPanel pb={4}>
               {t(
-                " With years of experience, we have a deep understanding of the evolving digital world and are equipped to meet the needs of modern businesses."
+                "With years of experience, we have a deep understanding of the evolving digital world and are equipped to meet the needs of modern businesses."
               )}
             </AccordionPanel>
           </AccordionItem>
@@ -70,7 +107,7 @@ function About() {
             </AccordionButton>
             <AccordionPanel pb={4}>
               {t(
-                "At Bolivard, we pride ourselves on delivering solutions that are not only effective but also of the highest quality, ensuring seamless performance and user satisfaction."
+                "At Boulevard, we pride ourselves on delivering solutions that are not only effective but also of the highest quality, ensuring seamless performance and user satisfaction."
               )}
             </AccordionPanel>
           </AccordionItem>

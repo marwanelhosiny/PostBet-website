@@ -37,7 +37,7 @@ function Footer() {
             <Link to={"/about"}>{t("About")}</Link>
           </div>
           <div className="copyright">
-            <p>{t("© 2024. All rights reserved by Bolivard.")}</p>
+            <p>{t("© 2024. All rights reserved by Boulevard.")}</p>
           </div>
         </div>
       </div>
