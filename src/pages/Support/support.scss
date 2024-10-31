@@ -4,13 +4,18 @@ body.ar {
       right: 15px;
     }
   }
-  .circle.one{
+  .circle.one {
     right: auto;
     left: -30px;
   }
-  .circle.two{
+  .circle.two {
     right: auto;
     left: 30px;
+  }
+  .contact-form{
+    p{
+      margin-right: 10px;
+    }
   }
 }
 
@@ -27,6 +32,8 @@ body.ar {
     justify-content: center;
   }
 
+
+
   .form {
     width: 100%;
     max-width: 820px;
@@ -42,6 +49,12 @@ body.ar {
   .contact-form {
     background-color: var(--main_color);
     position: relative;
+    p{
+      color: red;
+      margin-top: 5px;
+      margin-left: 10px;
+      font-size: 14px;
+    }
   }
 
   .circle {
@@ -92,7 +105,7 @@ body.ar {
 
   .input-container {
     position: relative;
-    margin: 1rem 0;
+    margin-top: 10px;
   }
 
   .input {
@@ -147,7 +160,7 @@ body.ar {
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    margin: 0;
+    margin-top: 15px;
   }
 
   .btn:hover {
