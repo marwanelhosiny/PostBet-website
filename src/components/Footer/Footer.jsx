@@ -14,13 +14,23 @@ function Footer() {
           <p>{t("Follow Us")}</p>
           <div className="media">
             <div className="icon">
-              <i className="fa-brands fa-facebook"></i>
+              <a
+                href="https://www.facebook.com/profile.php?id=61567779457730"
+                target="blank"
+              >
+                {" "}
+                <i className="fa-brands fa-facebook"></i>
+              </a>
             </div>
             <div className="icon">
-              <i class="fa-brands fa-twitter"></i>
+              <a href="https://x.com/postbett" target="blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
             </div>
             <div className="icon">
-              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/post_bet" target="blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </div>
           </div>
         </div>

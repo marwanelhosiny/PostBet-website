@@ -31,13 +31,16 @@
             gap: 20px;
             align-items: center;
             .icon{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #fff;
-                padding: 10px;
-                border-radius: 50%;
-                color: var(--main_color);
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    padding: 10px;
+                    border-radius: 50%;
+                    color: var(--main_color);
+                }
+
             }
         }
     }
