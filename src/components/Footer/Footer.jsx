@@ -1,7 +1,7 @@
 import { t } from "i18next";
 import React from "react";
-import logoAr from "../../assets/images/logo.jpg";
-import logoEn from "../../assets/images/logoEn.jpg";
+import logoAr from "../../assets/images/Footer-removebg-preview.png";
+import logoEn from "../../assets/images/Footer-removebg-preview.png";
 import { Link } from "react-router-dom";
 import "./footer.scss";
 

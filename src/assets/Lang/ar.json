@@ -3,8 +3,14 @@
   "About": "من نحن",
   "Support": "الدعم",
   "Policy": "الشروط و الاحكام",
+  "Terms and Conditions": "الشروط والأحكام",
+   "Ourfeature": "مميزاتنا",
   "Welcome To": "اهلا بكم في",
   "PostBet": " بوست بت",
+  "Easily publish on social media platforms with one click.": " نشر بسهولة على منصات التواصل الاجتماعي بنقرة واحدة.",
+  "Smart tools for editing content before publishing.": " أدوات ذكية لتحرير المحتوى قبل النشر.",
+  "AI technology to create unique content. This video was created using AI.": " تقنية الذكاء الاصطناعي لإنشاء محتوى فريد. تم إنشاء هذا الفيديو باستخدام الذكاء الاصطناعي",
+  "Features": "مميزات",
   "Connect your social media platforms and share your message with the world all at once,": "قم بتوصيل منصات الوسائط الاجتماعية الخاصة بك وشارك رسالتك مع العالم مرة واحدة،",
   "with just one click!": "بضغطة واحدة فقط !",
   "PostBet is a cutting-edge application that aims to make it easier and faster to manage and publish content across multiple social media platforms. We provide a complete solution for content creators, businesses, marketers, and even individual users to publish photos and videos on platforms like Instagram, Facebook, X, TikTok, YouTube, etc., simultaneously and with ease.": "PostBet هو تطبيق متطور يهدف إلى تسهيل إدارة ونشر المحتوى عبر منصات التواصل الاجتماعي المتعددة بشكل فعال وسريع. نحن نقدم حلاً متكاملاً لمنشئي المحتوى، والشركات، والمسوقين، وحتى المستخدمين الأفراد، لنشر الصور والفيديوهات على منصات مثل Instagram، Facebook، X، TikTok، YouTube، وغيرها، في آنٍ واحد وبكل سهولة.",
@@ -46,5 +52,77 @@
   "At Boulevard, we pride ourselves on delivering solutions that are not only effective but also of the highest quality, ensuring seamless performance and user satisfaction.": "في بوليفارد، نحن نفخر بتقديم حلول ليست فعالة فحسب، بل تتميز أيضًا بأعلى مستويات الجودة، مما يضمن الأداء السلس ورضا المستخدم.",
   "Comprehensive Digital Solutions": "حلول رقمية شاملة",
   "From social media management platforms like Postbet to custom-built software and mobile apps, we offer a wide range of services designed to fuel digital transformation.": "بدءًا من منصات إدارة الوسائط الاجتماعية مثل Postbet وحتى البرامج المصممة خصيصًا وتطبيقات الأجهزة المحمولة، فإننا نقدم مجموعة واسعة من الخدمات المصممة لدعم التحول الرقمي.",
-  "Can’t be Empty": "يجب ان يتم ملؤه"
+  "Can’t be Empty": "يجب ان يتم ملؤه",
+
+  "termsAndConditions": {
+    "title": "الشروط والأحكام",
+    "welcome": "مرحبًا بكم في PostBet! تحكم هذه الشروط والأحكام استخدامك لموقع PostBet. من خلال الوصول إلى هذا الموقع أو استخدامه، فإنك توافق على الالتزام بهذه الشروط. إذا كنت لا توافق على أي جزء من هذه الشروط، يرجى عدم استخدام موقعنا.",
+    "acceptanceOfTerms": {
+      "title": "1. قبول الشروط",
+      "content": "من خلال الوصول إلى PostBet واستخدامه، فإنك توافق على الالتزام بهذه الشروط والأحكام وجميع القوانين المعمول بها. إذا كنت لا تقبل أيًا من هذه الشروط، يجب عليك التوقف عن الاستخدام فورًا."
+    },
+    "useOfWebsite": {
+      "title": "2. استخدام الموقع",
+      "content": "أنت توافق على استخدام PostBet فقط لأغراض قانونية وبطريقة لا تنتهك حقوق أي طرف ثالث أو تقيد أو تمنع استخدام هذا الموقع من قبل أي طرف ثالث. يشمل السلوك المحظور على سبيل المثال لا الحصر:",
+      "prohibitedBehavior": [
+        "نشر محتوى مسيء أو غير قانوني أو ضار.",
+        "الانخراط في أنشطة احتيالية أو مضللة.",
+        "محاولة اختراق أو تعطيل أو إتلاف وظائف الموقع."
+      ]
+    },
+    "intellectualPropertyRights": {
+      "title": "3. حقوق الملكية الفكرية",
+      "content": "ما لم يُنص على خلاف ذلك، فإن جميع المحتويات على PostBet، بما في ذلك على سبيل المثال لا الحصر النصوص والرسومات والشعارات والصور والبرمجيات، هي ملك لـ PostBet أو المرخصين لها. لا يجوز لك:",
+      "prohibitedActions": [
+        "نسخ أو إعادة إنتاج أو توزيع أو بيع أي جزء من الموقع دون موافقة كتابية منا.",
+        "استخدام العلامات التجارية أو الشعارات أو العلامات الخاصة بنا دون إذن."
+      ]
+    },
+    "accountRegistration": {
+      "title": "4. تسجيل الحساب",
+      "content": "للدخول إلى بعض الميزات، قد يُطلب منك تسجيل حساب. أنت مسؤول عن الحفاظ على سرية بيانات اعتماد حسابك. PostBet ليست مسؤولة عن أي وصول غير مصرح به ناتج عن فشلك في تأمين بيانات الاعتماد الخاصة بك."
+    },
+    "boulevardETradingServices": {
+      "title": "5. خدمات Boulevard E Trading",
+      "content": "يوفر PostBet خدمات متعلقة بـ Boulevard E Trading، بما في ذلك على سبيل المثال لا الحصر التحليل المالي ورؤى الاستثمار والوصول إلى السوق.",
+      "responsibility": "أنت مسؤول عن ضمان أن استخدامك لهذه الخدمات يتوافق مع القوانين واللوائح في ولايتك القضائية.",
+      "disclaimer": "نحن لا نقدم أي نصائح مالية أو استثمارية. أي إجراءات تتخذها بناءً على المعلومات المقدمة على الموقع هي على مسؤوليتك الخاصة."
+    },
+    "paymentsAndTransactions": {
+      "title": "6. المدفوعات والمعاملات",
+      "content": "يجب أن تلتزم جميع المعاملات بسياسات الدفع الموضحة على الموقع.",
+      "withdrawalRequests": "قد تخضع طلبات السحب للتحقق من الهوية وأوقات المعالجة.",
+      "fraudPolicy": "نحتفظ بالحق في تعليق أو حجب المدفوعات في حالات الاشتباه في الاحتيال أو انتهاك السياسات."
+    },
+    "limitationOfLiability": {
+      "title": "7. الحد من المسؤولية",
+      "content": "لا تضمن PostBet أن الموقع سيكون خاليًا من الأخطاء أو الانقطاعات.",
+      "disclaimer": "لن نكون مسؤولين عن أي أضرار مباشرة أو غير مباشرة أو تبعية تنشأ عن استخدام موقعنا أو خدماتنا.",
+      "reliance": "أي اعتماد تضعونه على محتوى الموقع هو على مسؤوليتكم الخاصة."
+    },
+    "terminationOfUse": {
+      "title": "8. إنهاء الاستخدام",
+      "content": "نحتفظ بالحق في تعليق أو إنهاء الوصول إلى PostBet وفقًا لتقديرنا الخاص إذا تم اكتشاف أن المستخدم ينتهك هذه الشروط."
+    },
+    "privacyPolicy": {
+      "title": "9. سياسة الخصوصية",
+      "content": "يخضع استخدامك لـ PostBet أيضًا لسياسة الخصوصية الخاصة بنا، والتي توضح كيف نجمع ونستخدم ونحمي بياناتك. يرجى قراءتها بعناية."
+    },
+    "changesToTerms": {
+      "title": "10. التغييرات على الشروط",
+      "content": "قد نقوم بتحديث هذه الشروط والأحكام في أي وقت دون إشعار مسبق. أي تغييرات ستكون فعالة عند نشرها على الموقع. الاستمرار في استخدام PostBet بعد التغييرات يعني قبول الشروط المحدثة."
+    },
+    "governingLaw": {
+      "title": "11. القانون الحاكم",
+      "content": "تخضع هذه الشروط والأحكام للقوانين ويتم تفسيرها وفقًا لها. أي نزاعات تنشأ عن استخدام هذا الموقع سيتم حلها في المحاكم المختصة."
+    }
+    
+     
+    }
+  
+  
+
 }
+
+
+

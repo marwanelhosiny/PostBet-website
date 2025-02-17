@@ -1,3 +1,81 @@
 {
+    "termsAndConditions": {
+      "title": "Terms and Conditions",
+      "welcome": "Welcome to PostBet! These Terms and Conditions govern your use of PostBet. By accessing or using this Website, you agree to comply with these terms. If you do not agree with any part of these Terms, please do not use our Website.",
+      "acceptanceOfTerms": {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing and using PostBet, you agree to abide by these Terms and Conditions and all applicable laws. If you do not accept any of these terms, you must discontinue use immediately."
+      },
+      "useOfWebsite": {
+        "title": "2. Use of the Website",
+        "content": "You agree to use PostBet only for lawful purposes and in a manner that does not infringe the rights of, or restrict or inhibit the use of this Website by, any third party. Prohibited behavior includes but is not limited to:",
+        "prohibitedBehavior": [
+          "Posting offensive, illegal, or harmful content.",
+          "Engaging in fraudulent, deceptive, or misleading activities.",
+          "Attempting to hack, disrupt, or damage the Website’s functionality."
+        ]
+      },
+      "intellectualPropertyRights": {
+        "title": "3. Intellectual Property Rights",
+        "content": "Unless stated otherwise, all content on PostBet, including but not limited to text, graphics, logos, images, and software, is the property of PostBet or its licensors. You may not:",
+        "prohibitedActions": [
+          "Copy, reproduce, distribute, or sell any part of the Website without our written consent.",
+          "Use our trademarks, logos, or branding without permission."
+        ]
+      },
+      "accountRegistration": {
+        "title": "4. Account Registration",
+        "content": "To access certain features, you may be required to register an account. You are responsible for maintaining the confidentiality of your account credentials. PostBet is not responsible for any unauthorized access resulting from your failure to secure your credentials."
+      },
+      "boulevardETradingServices": {
+        "title": "5. Boulevard E Trading Services",
+        "content": "PostBet provides services related to Boulevard E Trading, including but not limited to financial analysis, investment insights, and marketplace access.",
+        "responsibility": "You are responsible for ensuring that your use of these services complies with the laws and regulations of your jurisdiction.",
+        "disclaimer": "We do not provide financial or investment advice. Any actions you take based on the information provided on the Website are at your own risk."
+      },
+      "paymentsAndTransactions": {
+        "title": "6. Payments and Transactions",
+        "content": "All transactions must comply with the payment policies outlined on the Website.",
+        "withdrawalRequests": "Withdrawal requests may be subject to identity verification and processing times.",
+        "fraudPolicy": "We reserve the right to suspend or withhold payments in cases of suspected fraud or policy violations."
+      },
+      "limitationOfLiability": {
+        "title": "7. Limitation of Liability",
+        "content": "PostBet does not guarantee that the Website will be free from errors or interruptions.",
+        "disclaimer": "We shall not be liable for any direct, indirect, or consequential damages arising from the use of our Website or services.",
+        "reliance": "Any reliance you place on the Website's content is at your own risk."
+      },
+      "terminationOfUse": {
+        "title": "8. Termination of Use",
+        "content": "We reserve the right to suspend or terminate access to PostBet at our sole discretion if a user is found to be violating these Terms."
+      },
+      "privacyPolicy": {
+        "title": "9. Privacy Policy",
+        "content": "Your use of PostBet is also governed by our Privacy Policy, which explains how we collect, use, and protect your data. Please read it carefully."
+      },
+      "changesToTerms": {
+        "title": "10. Changes to Terms",
+        "content": "We may update these Terms and Conditions at any time without prior notice. Any changes will be effective upon posting on the Website. Continued use of PostBet after changes implies acceptance of the updated Terms."
+      },
+      "governingLaw": {
+        "title": "11. Governing Law",
+        "content": "These Terms and Conditions shall be governed by and construed in accordance with the laws. Any disputes arising from the use of this Website shall be resolved in the competent courts."
+      }
+    },
 
-}
+   "features": {
+    "title": "Our Features",
+    "items": [
+      {
+        "text": "Easily publish on social media platforms with one click."
+      },
+      {
+        "text": "Smart tools for editing content before publishing."
+      },
+      {
+        "text": "AI technology to create unique content."
+      }
+    ]
+  }
+  
+  }

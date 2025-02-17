@@ -1,6 +1,6 @@
-import React from "react";
-import logoAr from "../../assets/images/logo.jpg";
-import logoEn from "../../assets/images/logoEn.jpg";
+// import React from "react";
+import logoAr from "../../assets/images/WhatsApp Image 2025-02-17 at 04.55.57_51612500.jpg";
+import logoEn from "../../assets/images/WhatsApp Image 2025-02-17 at 04.55.57_51612500.jpg";
 import { Link, NavLink } from "react-router-dom";
 import { t } from "i18next";
 import "./header.scss";
@@ -43,6 +43,8 @@ function Header() {
             <NavLink to={"/about"}>{t("About")}</NavLink>
             <NavLink to={"/support"}>{t("Support")}</NavLink>
             <NavLink to={"/policy"}>{t("Policy")}</NavLink>
+            <NavLink to={"/terms-and-conditions"}>{t("Terms and Conditions")}</NavLink>
+            <NavLink to={"/feature"}>{t("Ourfeature")}</NavLink>
           </div>
           <div className="menu">
             <Menu >
@@ -72,6 +74,20 @@ function Header() {
                     {" "}
                     <i className="fa-solid fa-building-shield"></i>
                     {t("Policy")}
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/terms-and-conditions"}>
+                    {" "}
+                    <i className="fa-solid fa-building-shield"></i>
+                    {t("Terms and Conditions")}
+                  </Link>
+                </MenuItem>
+                <MenuItem>
+                  <Link to={"/feature"}>
+                    {" "}
+                    <i className="fa-solid fa-building-shield"></i>
+                    {t("Ourfeature")}
                   </Link>
                 </MenuItem>
               </MenuList>

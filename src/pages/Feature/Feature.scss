@@ -1,0 +1,44 @@
+.feature {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #0e74f0;
+    }
+  
+    .feature-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+  
+      .feature-item {
+        flex: 1 1 300px;
+        max-width: 300px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: translateY(-10px);
+        }
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          margin-bottom: 15px;
+        }
+  
+        p {
+          font-size: 1rem;
+          color: #666;
+        }
+      }
+    }
+  }

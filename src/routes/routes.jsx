@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Loader from "../components/Loader/Loader";
-import { About, Application, Support, Home, PrivcyPolicy } from "../pages";
+import { About, Application, Support, Home, PrivcyPolicy, TermsAndConditions, Feature } from "../pages"; // Added TermsAndConditions here
 
 export const routes = createBrowserRouter([
   {
@@ -41,6 +41,22 @@ export const routes = createBrowserRouter([
         element: (
           <Suspense fallback={<Loader />}>
             <PrivcyPolicy />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/terms-and-conditions", // Added new route for TermsAndConditions
+        element: (
+          <Suspense fallback={<Loader />}>
+            <TermsAndConditions />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/feature", // Added new route for TermsAndConditions
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Feature />
           </Suspense>
         ),
       },
