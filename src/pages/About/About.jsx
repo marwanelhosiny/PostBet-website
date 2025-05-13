@@ -30,7 +30,7 @@ function About() {
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pb={4}>
-              {t("PostBet is an Emirati app owned by an Emirati company and based in the United Arab Emirates. It aims to facilitate the management and publication of content across various social media platforms effectively and quickly. We offer a complete solution for content creators, businesses, marketers, and even individuals to publish photos and videos simultaneously with ease.")}
+              {t("Postly is an Emirati app owned by an Emirati company and based in the United Arab Emirates. It aims to facilitate the management and publication of content across various social media platforms effectively and quickly. We offer a complete solution for content creators, businesses, marketers, and even individuals to publish photos and videos simultaneously with ease.")}
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>
@@ -42,7 +42,7 @@ function About() {
             </AccordionButton>
             <AccordionPanel pb={4}>
               {t(
-               "PostBet provides smart tools for editing content before publishing, and the ability to upload and publish multiple files at once. Additionally, we offer AI technology that helps you create unique content based on your descriptions."
+               "Postly provides smart tools for editing content before publishing, and the ability to upload and publish multiple files at once. Additionally, we offer AI technology that helps you create unique content based on your descriptions."
               )}
             </AccordionPanel>
           </AccordionItem>
@@ -55,7 +55,7 @@ function About() {
             </AccordionButton>
             <AccordionPanel pb={4}>
               {t(
-                "We aim to empower individuals and businesses to scale their digital presence with less effort and greater results. PostBet is your ideal partner for managing digital content in a smart and fast way."
+                "We aim to empower individuals and businesses to scale their digital presence with less effort and greater results. Postly is your ideal partner for managing digital content in a smart and fast way."
               )}
             </AccordionPanel>
           </AccordionItem>
@@ -120,7 +120,7 @@ function About() {
             </AccordionButton>
             <AccordionPanel pb={4}>
               {t(
-                "From social media management platforms like Postbet to custom-built software and mobile apps, we offer a wide range of services designed to fuel digital transformation."
+                "From social media management platforms like Postly to custom-built software and mobile apps, we offer a wide range of services designed to fuel digital transformation."
               )}
             </AccordionPanel>
           </AccordionItem>

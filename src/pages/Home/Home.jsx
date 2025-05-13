@@ -11,7 +11,7 @@ import { useTypewriter } from "react-simple-typewriter";
 
 function Home() {
   const [text] = useTypewriter({
-    words : [t("PostBet")],
+    words : [t("PostLy")],
     loop : {} ,
     typeSpeed : 120 ,
     deleteSpeed : 80
@@ -52,7 +52,7 @@ function Home() {
       </div>
       <div className="container sectionHome">
         <div className="title">
-          <h1>{t("What is Post Bet ?")}</h1>
+          <h1>{t("What is Postly ?")}</h1>
           <img src={line} alt="" />
         </div>
         <div className="flex">
@@ -62,7 +62,7 @@ function Home() {
           </div>
           <div className="content">
             <p>
-              {t("PostBet is a cutting-edge application that aims to make it easier and faster to manage and publish content across multiple social media platforms. We provide a complete solution for content creators, businesses, marketers, and even individual users to publish photos and videos on platforms like Instagram, Facebook, X, TikTok, YouTube, etc., simultaneously and with ease.")}
+              {t("Postly is a cutting-edge application that aims to make it easier and faster to manage and publish content across multiple social media platforms. We provide a complete solution for content creators, businesses, marketers, and even individual users to publish photos and videos on platforms like Instagram, Facebook, X, TikTok, YouTube, etc., simultaneously and with ease.")}
             </p>
           </div>
         </div>
