@@ -21,7 +21,7 @@ function PrivcyPolicy() {
               </div>
               <p className="info">
                 {t(
-                  "Users are allowed to create and share posts across their integrated social media platforms using Postly."
+                  "Users are allowed to create and share posts across their integrated social media platforms using Poswize."
                 )}
               </p>
             </div>
@@ -55,7 +55,7 @@ function PrivcyPolicy() {
               </div>
               <p className="info">
                 {t(
-                  "Users can access and utilize analytics tools provided by Postly to track the performance of their posts and engagement metrics."
+                  "Users can access and utilize analytics tools provided by Poswize to track the performance of their posts and engagement metrics."
                 )}
               </p>
             </div>
@@ -126,7 +126,7 @@ function PrivcyPolicy() {
               </div>
               <p className="info">
                 {t(
-                  "Users are prohibited from attempting to bypass any security measures in place on the Postly platform."
+                  "Users are prohibited from attempting to bypass any security measures in place on the Poswize platform."
                 )}
               </p>
             </div>
