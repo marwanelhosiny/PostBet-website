@@ -11,12 +11,12 @@ async function createServer() {
         const app = express();
 
         // Serve images and videos
-        app.use('/img', express.static(path.join(__dirname, '../Post-Bet/images'), {
+        app.use('/img', express.static(path.join(__dirname, '../Post__Bet/images'), {
             index: false,
             fallthrough: false,
         }));
 
-        app.use('/vid', express.static(path.join(__dirname, '../Post-Bet/videos'), {
+        app.use('/vid', express.static(path.join(__dirname, '../Post__Bet/videos'), {
             index: false,
             fallthrough: false,
         }));
