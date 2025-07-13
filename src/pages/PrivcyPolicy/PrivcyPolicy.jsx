@@ -1,9 +1,154 @@
 import React from "react";
 
 function PrivacyPolicy() {
-  // Since we can't use localStorage in this environment, we'll default to 'en'
+  // Language state - you can change this to 'ar' to see Arabic
+  const [lang, setLang] = React.useState('en');
+
   // In your actual app, you can restore: const { lang } = localStorage;
-  const lang = 'en';
+
+  const styles = {
+    policy: {
+      backgroundColor: '#f8fafc',
+      minHeight: '100vh',
+      padding: '20px'
+    },
+    languageToggle: {
+      position: 'absolute',
+      top: '20px',
+      right: '20px',
+      background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
+      color: '#ffffff',
+      border: 'none',
+      borderRadius: '8px',
+      padding: '10px 20px',
+      cursor: 'pointer',
+      fontSize: '14px',
+      fontWeight: 'bold',
+      transition: 'transform 0.2s ease',
+      boxShadow: '0 4px 12px rgba(59, 130, 246, 0.3)'
+    },
+    languageToggleHover: {
+      transform: 'translateY(-2px)'
+    },
+    container: {
+      maxWidth: '1200px',
+      margin: '30px auto',
+      backgroundColor: '#ffffff',
+      borderRadius: '12px',
+      boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
+      padding: '40px',
+      direction: lang === 'ar' ? 'rtl' : 'ltr'
+    },
+    h1: {
+      fontSize: '35px',
+      textAlign: 'center',
+      color: '#1f2937',
+      marginBottom: '20px',
+      fontWeight: 'bold'
+    },
+    h2: {
+      fontSize: '28px',
+      textAlign: 'center',
+      marginBottom: '30px',
+      color: '#3b82f6',
+      fontWeight: '600'
+    },
+    description: {
+      textAlign: 'center',
+      marginBottom: '40px',
+      fontSize: '18px',
+      color: '#6b7280',
+      maxWidth: '800px',
+      margin: '0 auto 40px auto',
+      lineHeight: '1.6'
+    },
+    merge: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+      gap: '20px',
+      '@media (max-width: 768px)': {
+        gridTemplateColumns: '1fr'
+      }
+    },
+    allowed: {
+      display: 'flex',
+      flexDirection: 'column',
+      background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
+      borderRadius: '12px',
+      overflow: 'hidden',
+      boxShadow: '0 8px 20px rgba(59, 130, 246, 0.3)',
+      transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+    },
+    allowedHover: {
+      transform: 'translateY(-5px)',
+      boxShadow: '0 12px 30px rgba(59, 130, 246, 0.4)'
+    },
+    sectionTitle: {
+      fontSize: '20px',
+      textTransform: 'capitalize',
+      background: 'linear-gradient(135deg, #1e40af 0%, #7c3aed 100%)',
+      margin: '0',
+      padding: '15px 20px',
+      color: '#ffffff',
+      textAlign: 'center',
+      fontWeight: 'bold',
+      borderBottom: '2px solid rgba(255, 255, 255, 0.1)'
+    },
+    itemsContainer: {
+      padding: '20px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '15px'
+    },
+    item: {
+      backgroundColor: 'rgba(255, 255, 255, 0.95)',
+      padding: '20px',
+      borderRadius: '8px',
+      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+      transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+    },
+    itemHover: {
+      transform: 'translateY(-2px)',
+      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
+    },
+    topic: {
+      fontSize: '18px',
+      color: '#1f2937',
+      display: 'flex',
+      alignItems: 'flex-start',
+      gap: '10px',
+      marginBottom: '8px',
+      fontWeight: '600'
+    },
+    topicMobile: {
+      fontSize: '16px'
+    },
+    bulletPoint: {
+      color: '#10b981',
+      fontSize: '24px',
+      fontWeight: 'bold',
+      lineHeight: '1',
+      marginTop: '2px'
+    },
+    info: {
+      color: '#4b5563',
+      textAlign: 'left',
+      fontSize: '14px',
+      lineHeight: '1.5',
+      marginLeft: '34px'
+    },
+    infoMobile: {
+      fontSize: '13px'
+    }
+  };
+
+  // Translation function
+  const t = (key) => {
+    const translations = {
+      "Privacy & Policy": lang === 'ar' ? "الشروط و الاحكام" : "Privacy & Policy"
+    };
+    return translations[key] || key;
+  };
 
   const privacyData = {
     en: {
@@ -296,37 +441,72 @@ function PrivacyPolicy() {
 
   const currentData = privacyData[lang] || privacyData.en;
 
+  // Handle hover effects
+  const [hoveredSection, setHoveredSection] = React.useState(null);
+  const [hoveredItem, setHoveredItem] = React.useState(null);
+  const [hoveredLangButton, setHoveredLangButton] = React.useState(false);
+
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-gray-50 min-h-screen">
-      <div className="bg-white rounded-lg shadow-lg p-8">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
+    <div style={styles.policy}>
+      <button
+        style={{
+          ...styles.languageToggle,
+          ...(hoveredLangButton ? styles.languageToggleHover : {})
+        }}
+        onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
+        onMouseEnter={() => setHoveredLangButton(true)}
+        onMouseLeave={() => setHoveredLangButton(false)}
+      >
+        {lang === 'en' ? 'العربية' : 'English'}
+      </button>
+
+      <div style={styles.container}>
+        <h1 style={styles.h1}>
           Privacy & Policy
         </h1>
-        <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">
+        <h2 style={styles.h2}>
           {currentData.heading}
         </h2>
-        <p className="text-center text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
+        <p style={styles.description}>
           {currentData.desc}
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div style={styles.merge}>
           {currentData.sections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg overflow-hidden shadow-xl">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-700 p-4">
-                <h3 className="text-xl font-bold text-white text-center">
-                  {section.title}
-                </h3>
-              </div>
-              <div className="p-4 space-y-4">
+            <div
+              key={sectionIndex}
+              style={{
+                ...styles.allowed,
+                ...(hoveredSection === sectionIndex ? styles.allowedHover : {})
+              }}
+              onMouseEnter={() => setHoveredSection(sectionIndex)}
+              onMouseLeave={() => setHoveredSection(null)}
+            >
+              <h3 style={styles.sectionTitle}>
+                {section.title}
+              </h3>
+              <div style={styles.itemsContainer}>
                 {section.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="bg-white bg-opacity-90 rounded-lg p-4 shadow-sm">
-                    <div className="flex items-start gap-3 mb-2">
-                      <span className="text-green-500 text-2xl font-bold flex-shrink-0">*</span>
-                      <div className="text-lg font-semibold text-gray-800 leading-tight">
-                        {item.topic}
-                      </div>
+                  <div
+                    key={itemIndex}
+                    style={{
+                      ...styles.item,
+                      ...(hoveredItem === `${sectionIndex}-${itemIndex}` ? styles.itemHover : {})
+                    }}
+                    onMouseEnter={() => setHoveredItem(`${sectionIndex}-${itemIndex}`)}
+                    onMouseLeave={() => setHoveredItem(null)}
+                  >
+                    <div style={{
+                      ...styles.topic,
+                      ...(window.innerWidth <= 800 ? styles.topicMobile : {})
+                    }}>
+                      <span style={styles.bulletPoint}>*</span>
+                      <span>{item.topic}</span>
                     </div>
-                    <p className="text-gray-700 text-sm leading-relaxed ml-8">
+                    <p style={{
+                      ...styles.info,
+                      ...(window.innerWidth <= 800 ? styles.infoMobile : {})
+                    }}>
                       {item.info}
                     </p>
                   </div>
