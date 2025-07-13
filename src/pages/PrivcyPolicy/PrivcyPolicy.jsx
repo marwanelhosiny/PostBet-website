@@ -1,9 +1,9 @@
 import React from "react";
-import "./policy.scss";
-import { t } from "i18next";
 
-function PrivcyPolicy() {
-  const { lang } = localStorage;
+function PrivacyPolicy() {
+  // Since we can't use localStorage in this environment, we'll default to 'en'
+  // In your actual app, you can restore: const { lang } = localStorage;
+  const lang = 'en';
 
   const privacyData = {
     en: {
@@ -297,29 +297,41 @@ function PrivcyPolicy() {
   const currentData = privacyData[lang] || privacyData.en;
 
   return (
-    <div className="policy">
-      <div className="container">
-        <h1>{t("Privacy & Policy")}</h1>
-        <h2>{currentData.heading}</h2>
-        <p style={{ textAlign: 'center', marginBottom: '30px', fontSize: '18px' }}>
+    <div className="max-w-6xl mx-auto p-6 bg-gray-50 min-h-screen">
+      <div className="bg-white rounded-lg shadow-lg p-8">
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
+          Privacy & Policy
+        </h1>
+        <h2 className="text-3xl font-semibold text-center text-blue-600 mb-8">
+          {currentData.heading}
+        </h2>
+        <p className="text-center text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
           {currentData.desc}
         </p>
 
-        <div className="merge">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           {currentData.sections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="allowed">
-              <h3>
-                <span>{section.title}</span>
-              </h3>
-              {section.items.map((item, itemIndex) => (
-                <div key={itemIndex} className="item" data-aos={itemIndex % 2 === 0 ? "fade-right" : "fade-left"}>
-                  <div className="topic">
-                    <span className="allow">*</span>
-                    {item.topic}
+            <div key={sectionIndex} className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg overflow-hidden shadow-xl">
+              <div className="bg-gradient-to-r from-blue-600 to-purple-700 p-4">
+                <h3 className="text-xl font-bold text-white text-center">
+                  {section.title}
+                </h3>
+              </div>
+              <div className="p-4 space-y-4">
+                {section.items.map((item, itemIndex) => (
+                  <div key={itemIndex} className="bg-white bg-opacity-90 rounded-lg p-4 shadow-sm">
+                    <div className="flex items-start gap-3 mb-2">
+                      <span className="text-green-500 text-2xl font-bold flex-shrink-0">*</span>
+                      <div className="text-lg font-semibold text-gray-800 leading-tight">
+                        {item.topic}
+                      </div>
+                    </div>
+                    <p className="text-gray-700 text-sm leading-relaxed ml-8">
+                      {item.info}
+                    </p>
                   </div>
-                  <p className="info">{item.info}</p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           ))}
         </div>
@@ -328,4 +340,4 @@ function PrivcyPolicy() {
   );
 }
 
-export default PrivcyPolicy;
+export default PrivacyPolicy;
