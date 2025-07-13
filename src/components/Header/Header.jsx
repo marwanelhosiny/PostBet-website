@@ -42,7 +42,7 @@ function Header() {
             <NavLink to={"/"}>{t("Home")}</NavLink>
             <NavLink to={"/about"}>{t("About")}</NavLink>
             <NavLink to={"/support"}>{t("Support")}</NavLink>
-            <NavLink to={"/policy"}>{t("Policy")}</NavLink>
+            <NavLink to={"/policy"}>{t("Privacy Policy")}</NavLink>
             <NavLink to={"/terms-and-conditions"}>{t("Terms and Conditions")}</NavLink>
             <NavLink to={"/feature"}>{t("Ourfeature")}</NavLink>
           </div>
@@ -73,7 +73,7 @@ function Header() {
                   <Link to={"/policy"}>
                     {" "}
                     <i className="fa-solid fa-building-shield"></i>
-                    {t("Policy")}
+                    {t("Privacy Policy")}
                   </Link>
                 </MenuItem>
                 <MenuItem>
